@@ -20,7 +20,7 @@ class MachineViewController: UIViewController, ARSCNViewDelegate {
     //2. registrar el gesto de tap
     //3. instanciar el modelo y enviar la imagen
     //4. Presentar los datos resultados del modelo
-    @objc func tapEjecutado(_ sender: UITapGestureRecognizer) {
+    @IBAction func tapEjecutado(_ sender: UITapGestureRecognizer) {
         print("Tap ejecutado")
         //obtener la vista donde se va a trabajar
         let vista = sender.view as! ARSCNView
@@ -160,5 +160,9 @@ class MachineViewController: UIViewController, ARSCNViewDelegate {
     func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
 }

@@ -37,7 +37,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="logo"/>
                                 <connections>
-                                    <segue destination="VcT-rW-cLN" kind="show" id="gXj-Lp-b5a"/>
+                                    <segue destination="VcT-rW-cLN" kind="presentation" id="VCW-ae-47j"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hint: Touch the logo for Object Recognition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeH-Sf-Ub8">
@@ -197,25 +197,38 @@ Desarrollado con amor en y para Tec CCM</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Okm-ge-Urk">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="668"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="SRS-xp-Zfx" appends="YES" id="qEr-Jq-Di7"/>
                                 </connections>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqF-dU-XEl">
+                                <rect key="frame" x="165" y="718" width="47" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <state key="normal" title="Cerrar"/>
+                                <connections>
+                                    <action selector="back:" destination="VcT-rW-cLN" eventType="touchUpInside" id="ufA-iL-cb1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="19B-Iw-uLw"/>
                     </view>
                     <connections>
-                        <outlet property="sceneView" destination="Okm-ge-Urk" id="yNm-Qi-a34"/>
+                        <outlet property="sceneView" destination="Okm-ge-Urk" id="ycw-SS-QyP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UMH-hE-E2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="SRS-xp-Zfx"/>
+                <tapGestureRecognizer id="SRS-xp-Zfx">
+                    <connections>
+                        <action selector="tapEjecutado:" destination="VcT-rW-cLN" id="OSA-Os-IVY"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="750" y="-995"/>
+            <point key="canvasLocation" x="749.60000000000002" y="-995.32019704433503"/>
         </scene>
         <!--Sphere View Controller-->
         <scene sceneID="5Ls-S1-s1N">
@@ -229,11 +242,19 @@ Desarrollado con amor en y para Tec CCM</string>
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plano Detectado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7g-WI-VHM">
+                                <rect key="frame" x="94" y="110" width="192" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="erZ-pr-HcA"/>
                     </view>
                     <connections>
+                        <outlet property="planoDetectado" destination="v7g-WI-VHM" id="ddj-9O-gRm"/>
                         <outlet property="sceneView" destination="ggE-qV-Ifq" id="AvE-XF-HSx"/>
                     </connections>
                 </viewController>
@@ -422,7 +443,7 @@ Desarrollado con amor en y para Tec CCM</string>
                                             <color key="titleColor" red="0.23529411759999999" green="0.12941176469999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="C7W-Or-tau" kind="show" id="9gW-yb-TfP"/>
+                                            <segue destination="C7W-Or-tau" kind="show" identifier="tressesenta" id="9gW-yb-TfP"/>
                                         </connections>
                                     </button>
                                 </subviews>

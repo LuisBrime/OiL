@@ -19,7 +19,7 @@
 		F496BF7C2150127400074374 /* TrayectoriasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F496BF7B2150127400074374 /* TrayectoriasTableViewController.swift */; };
 		F4A1FD7421825C05000EB81A /* VideoARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1FD7321825C05000EB81A /* VideoARViewController.swift */; };
 		F4A1FD76218264CB000EB81A /* AssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1FD75218264CB000EB81A /* AssetsViewController.swift */; };
-		F4A1FD782182671D000EB81A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A1FD772182671D000EB81A /* art.scnassets */; };
+		F4A1FD782182671D000EB81A /* escenes.sncassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A1FD772182671D000EB81A /* escenes.sncassets */; };
 		F4CF803C219A2CE600825006 /* MachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF803B219A2CE600825006 /* MachineViewController.swift */; };
 		F4F1272621996994004B7E9D /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F4F1272521996994004B7E9D /* Resnet50.mlmodel */; };
 		F4F1272A219A1DEB004B7E9D /* SphereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F12729219A1DEB004B7E9D /* SphereViewController.swift */; };
@@ -40,7 +40,7 @@
 		F496BF7B2150127400074374 /* TrayectoriasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayectoriasTableViewController.swift; sourceTree = "<group>"; };
 		F4A1FD7321825C05000EB81A /* VideoARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoARViewController.swift; sourceTree = "<group>"; };
 		F4A1FD75218264CB000EB81A /* AssetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsViewController.swift; sourceTree = "<group>"; };
-		F4A1FD772182671D000EB81A /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		F4A1FD772182671D000EB81A /* escenes.sncassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = escenes.sncassets; sourceTree = "<group>"; };
 		F4CF803B219A2CE600825006 /* MachineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineViewController.swift; sourceTree = "<group>"; };
 		F4F1272521996994004B7E9D /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../../../../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
 		F4F12729219A1DEB004B7E9D /* SphereViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphereViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			children = (
 				F4CF803B219A2CE600825006 /* MachineViewController.swift */,
 				F4F1272521996994004B7E9D /* Resnet50.mlmodel */,
-				F4A1FD772182671D000EB81A /* art.scnassets */,
+				F4A1FD772182671D000EB81A /* escenes.sncassets */,
 				F47B1A2C214489A4009B2003 /* AppDelegate.swift */,
 				F47B1A2E214489A5009B2003 /* FirstViewController.swift */,
 				F47B1A30214489A5009B2003 /* SecondViewController.swift */,
@@ -156,7 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47B1A39214489A7009B2003 /* LaunchScreen.storyboard in Resources */,
-				F4A1FD782182671D000EB81A /* art.scnassets in Resources */,
+				F4A1FD782182671D000EB81A /* escenes.sncassets in Resources */,
 				F47B1A36214489A7009B2003 /* Assets.xcassets in Resources */,
 				F47B1A34214489A5009B2003 /* Main.storyboard in Resources */,
 			);

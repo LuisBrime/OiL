@@ -82,10 +82,12 @@ class LabDetailViewController: UIViewController {
     }
     
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let nextView = segue.destination as! SphereViewController
-//        nextView.img = imgs[0]
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tressesenta" {
+            let vc = segue.destination as! SphereViewController
+            vc.img = imgs[0]
+        }
+    }
     /*
     // MARK: - Navigation
 
