@@ -55,7 +55,7 @@ class SphereViewController: UIViewController, ARSCNViewDelegate {
             let portalNode = portalScene?.rootNode.childNode(withName: "Portal", recursively: false)
             
             
-            let sphereNode = portalNode!.childNode(withName: "sphere", recursively: false)
+            let sphereNode = portalNode!.childNode(withName: "box", recursively: false)
             sphereNode?.geometry?.firstMaterial!.diffuse.contents = imagen
             
             let transform = hitTestResult.worldTransform
