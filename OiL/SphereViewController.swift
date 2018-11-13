@@ -54,10 +54,9 @@ class SphereViewController: UIViewController, ARSCNViewDelegate {
             let portalScene = SCNScene(named: "escenes.sncassets/Portal.scn")
             let portalNode = portalScene?.rootNode.childNode(withName: "Portal", recursively: false)
             
-            portalNode?.geometry?.firstMaterial!.diffuse.contents = imagen
             
-//            let sphereNode = portalNode!.childNode(withName: "sphere", recursively: false)
-//            sphereNode?.geometry?.firstMaterial!.diffuse.contents = imagen
+            let sphereNode = portalNode!.childNode(withName: "sphere", recursively: false)
+            sphereNode?.geometry?.firstMaterial!.diffuse.contents = imagen
             
             let transform = hitTestResult.worldTransform
             let planeXposition = transform.columns.3.x
